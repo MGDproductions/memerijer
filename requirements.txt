@@ -1,0 +1,6 @@
+discord.py 
+RandomWords 
+praw
+beautifulsoup4
+lxml
+deep_translator
