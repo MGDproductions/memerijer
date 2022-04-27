@@ -48,15 +48,15 @@ async def on_ready():
         except:
             pass
         
-@client.event
-async def on_guild_join(guild):
-    print("NIEUWE SERVER!")
-    print(f"{guild.name} - {guild.id} - {guild.member_count}")
-    channel = client.get_channel(794964662361260033)
-    await channel.send("<@416525692772286464> AYY NIEUWE SERVER!")
-    embed=discord.Embed(title=("Nieuwe server"), color=0xff0000)
-    embed.add_field(name=(f"{guild.name}"), value=(f"{guild.id} - {guild.member_count}"), inline=False)
-    await channel.send(embed=embed)
+#@client.event
+#async def on_guild_join(guild):
+    #print("NIEUWE SERVER!")
+    #print(f"{guild.name} - {guild.id} - {guild.member_count}")
+    #channel = client.get_channel(794964662361260033)
+    #await channel.send("<@416525692772286464> AYY NIEUWE SERVER!")
+    #embed=discord.Embed(title=("Nieuwe server"), color=0xff0000)
+    #embed.add_field(name=(f"{guild.name}"), value=(f"{guild.id} - {guild.member_count}"), inline=False)
+    #await channel.send(embed=embed)
 
 @client.command(name="poll")
 async def poll(ctx, option1, option2, *, question):
